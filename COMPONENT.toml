@@ -3,7 +3,7 @@ name = "SigmaOS-acpi-call"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "acpi-call component"
+description = "SigmaOS component repository"
 upstream = []
 
 [contract]
