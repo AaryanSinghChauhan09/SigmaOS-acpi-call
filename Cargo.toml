@@ -1,4 +1,15 @@
 [package]
-name = "acpi-call"
+name = "SigmaOS-acpi-call"
 version = "0.1.0"
 edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS acpi_call component"
+
+[lib]
+name = "acpi_call"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1"
+
+[dev-dependencies]
