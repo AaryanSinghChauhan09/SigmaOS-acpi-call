@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-acpi-call Component Wiki
+# SigmaOS-acpi-call Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-acpi-call provides SigmaOS component repository for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-acpi-call provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-acpi-call Abstraction
-- Fail-Fast on SigmaOS-acpi-call Initialization Errors
-- Deterministic SigmaOS-acpi-call Setup
-- Clear Abstraction Over SigmaOS-acpi-call APIs
-- Composition over Inheritance for SigmaOS-acpi-call extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-acpi-call Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-acpi-call Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-acpi-call Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-acpi-call APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-acpi-call extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-acpi-call follows a SigmaOS-acpi-call pattern:
+SigmaOS-acpi-call follows a SigmaOS-acpi-call pattern:
 - **SigmaOS-acpi-call Core**: Provides SigmaOS-acpi-call support, SigmaOS-acpi-call management, and SigmaOS-acpi-call tracking
 - **Management**: Supports SigmaOS-acpi-call management, SigmaOS-acpi-call configuration, and SigmaOS-acpi-call lifecycle
 - **Tracking**: Supports SigmaOS-acpi-call status, SigmaOS-acpi-call tracking, and SigmaOS-acpi-call lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-acpi-call follows a SigmaOS-acpi-call pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-acpi-call by given configuration
--  - Register a SigmaOS-acpi-call by given name
--  - Get SigmaOS-acpi-call status and SigmaOS-acpi-call availability
--  - Track SigmaOS-acpi-call management and SigmaOS-acpi-call tracking
+- Manage a SigmaOS-acpi-call by given configuration
+- Register a SigmaOS-acpi-call by given name
+- Get SigmaOS-acpi-call status and SigmaOS-acpi-call availability
+- Track SigmaOS-acpi-call management and SigmaOS-acpi-call tracking
 - Error types for SigmaOS-acpi-call failure scenarios or unsupported SigmaOS-acpi-call types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-acpi-call init, SigmaOS-acpi-call management)
 3. **Assert**: Verify the expected SigmaOS-acpi-call results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-acpi-call initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-acpi-call failure scenarios
 - Unit tests provided for SigmaOS-acpi-call management and configuration
